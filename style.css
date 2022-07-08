@@ -1,0 +1,96 @@
+/* alternative way of importing fonts from google fonts//raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;  /* Avoids box model problem and makes sure the width you provide is not stretched */
+    outline: none;
+    border:none;
+    text-decoration: none; /* removes underline from the text */
+    text-transform: capitalize;
+    overflow: hidden;
+   scroll-behavior: smooth;  
+   
+}
+
+/* Style the menu section */
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: rgb(47, 200, 5);
+    height: 65px;
+    z-index:100 ;  /*Header must look raised like a 3D view   */
+    text-align: center;
+    font-size: 22px;
+    line-height: 65px;/* line height is a space between two lines ,helps to allign element vertically center*/
+    font-weight: 800;
+    
+}
+.header .nav-bar{
+    display: flex;
+}
+.header .nav-bar a{
+    flex: 1px;
+    color: aliceblue;
+
+}
+.header .nav-bar a:hover{
+filter:brightness(0.8);
+}
+.header .nav-bar a:nth-child(1){
+    background-color: rgb(241, 61, 61);
+}
+.header .nav-bar a:nth-child(2){
+    background-color: rgb(97, 189, 72);
+}
+.header .nav-bar a:nth-child(3){
+    background-color: rgba(173, 11, 171, 0.775);
+}
+.header .nav-bar a:nth-child(4){
+    background-color: rgb(194, 69, 16);
+}
+.header .nav-bar a:nth-child(5){
+    background-color: rgb(61, 211, 234);
+}
+/* Styling the container */
+.container{
+    display:flex;
+    width:500%;
+    height:100vh;
+}
+.container .main-section{
+    display:flex;
+    width:20%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:azure;
+  
+}
+.container .main-section:nth-child(1){
+    background-color: rgb(241, 61, 61);
+}
+.container .main-section:nth-child(2){
+    background-color: rgb(97, 189, 72);
+}
+.container .main-section:nth-child(3){
+    background-color: rgba(173, 11, 171, 0.775);
+}
+.container .main-section:nth-child(4){
+    background-color: rgb(194, 84, 16);
+}
+.container .main-section:nth-child(5){
+    background-color: rgb(61, 211, 234);
+}
+@media(max-width:650px){
+    .header .nav-bar a span{
+        display:none; /*hide the menu text only show icon upto screen width of 750px*/
+    }
+}
